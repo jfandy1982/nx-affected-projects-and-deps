@@ -1,0 +1,25 @@
+name: 'action-nx-affected-projects-and-deps'
+description: 'GitHub action for outputting affected projects and dependencies of focussed projects within a Nx workspace'
+author: 'jfandy1982'
+
+branding:
+  icon: 'filter'
+  color: 'blue'
+
+inputs:
+  base:
+    description: 'Base of the current branch (usually main)'
+    required: false
+  head:
+    description: 'Latest commit of the current branch (usually HEAD)'
+    required: false
+
+outputs:
+  affected-projects:
+    description: 'List of all affected projects of all types'
+  affected-apps:
+    description: 'List of all affected projects of type `app`'
+  affected-libs:
+    description: 'List of all affected projects of type `lib`'
+  affected-e2e:
+    description: 'List of all affected projects of type `e2e`'
