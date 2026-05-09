@@ -9,6 +9,7 @@ GitHub Action that detects affected projects (apps, libs, e2e tests) within an N
 ## Known Structure
 
 - `experiments/` — contains the action definition and development snapshots; deliberate working area
+  - `experiments/superpowers/` — brainstorming specs and implementation plans from Claude sessions (gitignored, local only); check here for prior design decisions before starting new work
 - `node_modules/` — exists locally but is gitignored; not committed to the repo
 
 ## Tooling
