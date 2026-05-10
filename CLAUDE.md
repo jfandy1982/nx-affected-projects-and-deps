@@ -16,4 +16,4 @@ GitHub Action that detects affected projects (apps, libs, e2e tests) within an N
 
 - GitHub Actions SHAs are manually verified and pinned — do not flag pinned SHAs as outdated without checking first
 - Renovate: `renovate.json` in `.github/` is the repository-specific Renovate entry point; the `schedule` override there is intentional
-- pre-commit hook runs `lint-staged` (Prettier + cspell) on `*.json`, `*.md`, `*.yml`
+- pre-commit hook runs `lint-staged` (Prettier + cspell) on `*.json`, `*.md`, `*.yml`; additionally runs `js-yaml` syntax validation on `*.yml`, `*.yaml`
